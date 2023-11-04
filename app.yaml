@@ -1,0 +1,9 @@
+runtime: python 3.7 # Ganti versi Python sesuai kebutuhan aplikasi Anda
+
+handlers:
+  - url: /assets
+    static_dir: assets # Direktori tempat aset statis Anda (seperti CSS, gambar, dan JavaScript)
+
+  - url: /.*
+    static_files: index.html # Nama file utama HTML
+    upload: index.html
